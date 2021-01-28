@@ -1,0 +1,3 @@
+[submodule "lpzrobots"]
+	path = lpzrobots
+	url = https://github.com/pmanoonpong/lpzrobots.git
