@@ -1,4 +1,4 @@
-image = tai
+image=askebm/tai:amd-0
 path=/tmp/tai
 container_id_file = /tmp/tai/container_id
 

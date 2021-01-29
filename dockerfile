@@ -14,6 +14,7 @@ RUN apt-get install -yq g++  make  automake libtool xutils-dev m4  libreadline-d
   libgsl0-dev libglu-dev libgl1-mesa-dev freeglut3-dev  libopenscenegraph-dev \
 	libqt4-dev libqt4-opengl libqt4-opengl-dev qt4-qmake  libqt4-qt3support gnuplot \
 	gnuplot-x11 libncurses5-dev libgl1-mesa-dev mesa-utils libgl1-mesa-glx binutils
+	
 
 # Nvidia driver
 #RUN apt-get install -yq module-init-tools
@@ -25,7 +26,7 @@ RUN apt-get install -yq g++  make  automake libtool xutils-dev m4  libreadline-d
 COPY lpzrobots /lpzrobots
 COPY Makefile.conf /lpzrobots/
 WORKDIR /lpzrobots
-RUN make all -j4
+RUN make all -j6
 
 
 
