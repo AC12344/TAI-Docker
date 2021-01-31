@@ -23,6 +23,12 @@ make -j4
 ```
 Window with balls should appear
 
+## NVIDIA
+If you are using a NVIDIA graphics card.
+- Install [nvidia-docker](https://github.com/NVIDIA/nvidia-docker)
+- reload the docker deamon `sudo systemctl reload docker.service`
+- Use the nvidia branch of the repository
+
 ## Make it usefull from anywhere
 ``` bash
 alias tai='make -f /home/me/Git/TAI-Docker/Makefile'
