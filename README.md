@@ -1,6 +1,9 @@
 # Docker image for TAI course
 
-
+For available commands type
+``` bash
+make help
+```
 
 ## Update submodules
 ```bash
