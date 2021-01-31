@@ -1,4 +1,4 @@
-image=askebm/tai:nvidia-0
+image=askebm/tai:nvidia-1
 container_id_file = /tmp/tai_container_id
 
 build:
