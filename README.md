@@ -2,7 +2,7 @@
 
 ## Update submodules
 ```bash
-git submodule uodate --init --recursive
+git submodule update --init --recursive
 ```
 
 ## Quick test
