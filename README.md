@@ -18,3 +18,24 @@ make -j4
 ```
 Window with balls should appear
 
+## Make it usefull from anywhere
+``` bash
+alias rovi='make -f /home/me/Git/Robotics_and_Vision_Virtual_machine/Makefile'
+```
+
+## Clangd support
+	
+To have clangd support for the host editor make the tai-clangd script executable,
+owned by the docker group and set the setgid bit.
+``` bash
+sudo chown $USER:docker tai-clangd
+sudo chmod a+x,s+g tai-clangd
+```
+
+### YouCompleteMe in vim
+When starting vim do
+``` vimscript
+:let g:ycm_clangd_binary_path='<absolute path to this dir>/tai-clangd'
+:YcmRestartServer
+```
+
