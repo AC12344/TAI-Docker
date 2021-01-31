@@ -40,7 +40,7 @@ To have clangd support for the host editor make the tai-clangd script executable
 owned by the docker group and set the setgid bit.
 ``` bash
 sudo chown $USER:docker tai-clangd
-sudo chmod a+x,s+g tai-clangd
+sudo chmod a+x,g+s tai-clangd
 ```
 
 ### YouCompleteMe in vim
