@@ -23,7 +23,7 @@ $(container_id_file) :
 		--detach \
 		--workdir $(shell pwd) \
 		$(image) 
-	echo "Mounted ${PWD}"
+	@echo "Mounted $(shell pwd)"
 
 start:
 	xhost local:docker
