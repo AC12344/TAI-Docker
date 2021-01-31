@@ -1,5 +1,7 @@
 # Docker image for TAI course
 
+
+
 ## Update submodules
 ```bash
 git submodule update --init --recursive
@@ -20,7 +22,7 @@ Window with balls should appear
 
 ## Make it usefull from anywhere
 ``` bash
-alias rovi='make -f /home/me/Git/Robotics_and_Vision_Virtual_machine/Makefile'
+alias tai='make -f /home/me/Git/TAI-Docker/Makefile'
 ```
 
 ## Clangd support
