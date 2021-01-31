@@ -1,4 +1,4 @@
-image=askebm/tai:amd-1
+image=askebm/tai:amd-2
 container_id_file = /tmp/tai_container_id
 
 build:

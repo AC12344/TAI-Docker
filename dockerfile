@@ -22,10 +22,19 @@ COPY Makefile.conf /lpzrobots/
 WORKDIR /lpzrobots
 RUN make all -j6
 
-# Build utilities
-RUN apt-get install -yq cmake clangd-10
+# Get clangd-11
+RUN apt-get install -yq wget software-properties-common
+RUN wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | apt-key add -
+RUN add-apt-repository "deb http://apt.llvm.org/bionic/ llvm-toolchain-bionic-11 main"
+RUN apt-get update
+RUN apt-get install -yq clangd-11
+
+# Get cmake
+RUN apt-get install -yq cmake 
 
 # Clean up
+RUN apt-get remove -yq wget software-properties-common
+RUN apt-get autoremove -yq
 RUN rm -rf /var/lib/apt/lists/*
 
 # Setup user 

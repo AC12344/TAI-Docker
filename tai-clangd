@@ -1,4 +1,4 @@
 #!/usr/bin/bash
 container_id_file=/tmp/tai_container_id
-docker exec -i $(cat ${container_id_file} ) clangd-10 "${@}"
+docker exec -i $(cat ${container_id_file} ) clangd-11 "${@}"
 exit $?
