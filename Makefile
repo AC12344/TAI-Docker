@@ -48,3 +48,14 @@ clangd: $(container_id_file)
 
 	
 .PHONY: build buildrm start stop rm enter init clangd
+help:
+	@echo "build"
+	@echo "buildrm"
+	@echo "start"
+	@echo "stop"
+	@echo "rm"
+	@echo "enter"
+	@echo "init"
+	@echo "clangd"
+.PHONY: help
+
